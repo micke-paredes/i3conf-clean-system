@@ -7,6 +7,13 @@ sudo apt-get install ffmpeg filezilla meld youtube-dl \
     nmap vlc -y
 sudo pip3 install awscli
 
+# Customize Rofi
+mkdir ~/.config/rofi/
+cd ~/.config/rofi/
+wget https://raw.githubusercontent.com/undiabler/nord-rofi-theme/master/nord.rasi
+echo "rofi.theme: nord" >> ~/.config/rofi/config
+
+
 # Install Oh my zsh 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 # Install ZSH plugins (autosuggestions autocomplete syntax-highlighting fzf)
