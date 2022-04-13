@@ -6,6 +6,7 @@ sudo apt-get install ffmpeg filezilla meld youtube-dl \
     screenfetch lamp-server^ i3 ansible unzip tmux \
     nmap vlc -y
 sudo pip3 install awscli
+sudo pip install --user bumblebee-status
 
 # Customize Rofi
 mkdir ~/.config/rofi/
