@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install ffmpeg filezilla meld youtube-dl \
     rofi ranger git bat vim zsh python3 python3-pip \
     screenfetch lamp-server^ i3 ansible unzip tmux \
-    nmap vlc -y
+    nmap vlc xclip maim sqlmap -y
 sudo pip3 install awscli
 sudo pip install --user bumblebee-status
 
