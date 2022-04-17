@@ -4,9 +4,18 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install ffmpeg filezilla meld youtube-dl \
     rofi ranger git bat vim zsh python3 python3-pip \
     screenfetch lamp-server^ i3 ansible unzip tmux \
-    nmap vlc xclip maim sqlmap -y
+    nmap vlc xclip maim sqlmap finch -y
 sudo pip3 install awscli
 sudo pip install --user bumblebee-status
+
+# Setting up finch messenger
+cd ~/Downloads
+wget http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_20.04/amd64/purple-facebook_20210215~e0d7732~22_amd64.deb
+sudo dpkg -i purple-facebook*.deb \
+&& sudo apt-get install -f -y \ 
+&& sudo dpkg -i purple-facebook_*.deb
+
+
 
 # Customize Rofi
 mkdir ~/.config/rofi/
