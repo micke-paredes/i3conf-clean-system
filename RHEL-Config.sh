@@ -4,7 +4,7 @@ sudo yum upgrade -y
 sudo yum install filezilla meld youtube-dl \
 rofi ranger git bat vim zsh python3 \
 python3-pip screenfetch ansible unzip nmap \
-clip maim finch lxappearance-devel picom -y
+clip maim finch lxappearance-devel picom feh-3.8-2.fc36 -y
 pip3 install awscli
 pip install --user bumblebee-status
 
