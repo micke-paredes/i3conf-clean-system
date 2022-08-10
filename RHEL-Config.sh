@@ -7,6 +7,9 @@ python3-pip screenfetch ansible unzip nmap \
 clip maim finch lxappearance-devel picom feh-3.8-2.fc36 -y
 pip3 install awscli
 pip install --user bumblebee-status
+sudo dnf install powerline-fonts fontawesome-fonts
+sudo dnf install fira-code-fonts
+
 
 # Customize Rofi
 mkdir ~/.config/rofi/
