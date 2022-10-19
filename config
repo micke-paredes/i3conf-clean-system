@@ -231,4 +231,5 @@ gaps inner 7
 gaps outer 7
 smart_gaps on
 smart_gaps inverse_outer
-exec_always ~/.config/i3/i3-alternating-layout/alternating_layouts.py
+# Move file to /bin https://github.com/olemartinorg/i3-alternating-layout
+exec_always /bin/alternating_layouts.py
