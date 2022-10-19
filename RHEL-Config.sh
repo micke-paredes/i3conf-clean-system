@@ -1,7 +1,7 @@
 # Initial installation 
 sudo yum update -y
 sudo yum upgrade -y
-sudo yum install filezilla meld youtube-dl rofi ranger git bat vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh-3.8-2.fc36 nitrogen httpd openssh samba firewalld -y
+sudo yum install filezilla meld youtube-dl ffmpeg rofi ranger git bat vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh-3.8-2.fc36 nitrogen httpd openssh samba firewalld -y
 
 pip3 install awscli
 pip install --user bumblebee-status
