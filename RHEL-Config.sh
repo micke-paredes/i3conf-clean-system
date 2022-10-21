@@ -56,9 +56,5 @@ sudo make install
 git clone https://github.com/olemartinorg/i3-alternating-layout
 sudo mv i3-alternating-layout/alternating_layouts.py /bin 
 # i3 gaps
-sudo yum install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev
-sudo yum install libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev 
-sudo yum install libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev
-sudo yum install libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool automake
 sudo yum install i3-gaps-4.19.1-3.fc36 --allowerasing
 rm -rf *
