@@ -3,7 +3,7 @@ sudo yum update -y
 sudo yum upgrade -y
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo yum install filezilla meld youtube-dl ffmpeg rofi ranger git bat vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh-3.8-2.fc36 nitrogen httpd openssh samba firewalld python3-netifaces -y
-sudo yum install cmus util-linux-user -y
+sudo yum install cmus util-linux-user i3 -y
 
 pip3 install awscli psutil i3ipc
 pip install --user bumblebee-status
