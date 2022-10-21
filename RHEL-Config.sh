@@ -39,7 +39,6 @@ cd ~/Documents
 git clone https://github.com/meskarune/i3lock-fancy/tree/dualmonitors
 cd i3lock-fancy/
 sudo make install
-cd ../
 # i3 alternate Layouts
 git clone https://github.com/olemartinorg/i3-alternating-layout
 sudo mv i3-alternating-layout/alternating_layouts.py /bin 
