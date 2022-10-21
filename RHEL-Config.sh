@@ -25,14 +25,6 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git &&
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
-# Install snap an packages
-sudo apt install snapd &&
-# Install snap programs
-for product in teams zoom beekeeper-studio code slack arduino; do
-  echo "Installing $product..."
-  sudo snap install $product --classic
-done
-
 # Set fonts
 mkdir -p ~/.local/share/fonts/
 cd ~/.local/share/fonts/
