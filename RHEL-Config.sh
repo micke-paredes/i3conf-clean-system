@@ -32,3 +32,13 @@ wget  https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Terminus.
 unzip Terminus.zip &&
 rm -rf *.zip
 sudo fc-cache -v
+
+# Setting up i3
+cd ~/Documents
+git clone https://github.com/meskarune/i3lock-fancy/tree/dualmonitors
+cd i3lock-fancy/
+sudo make install
+cd ../
+git clone https://github.com/olemartinorg/i3-alternating-layout
+sudo mv i3-alternating-layout/alternating_layouts.py /bin 
+rm -rf *
