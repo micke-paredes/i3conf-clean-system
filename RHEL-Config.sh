@@ -24,6 +24,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git &&
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+#Installing fzf
+~/.fzf/install
+# Setting up zsh settings
+plugins="git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting sudo" &&
+sed -i "s%plugins=(git)%plugins=($plugins)%g" ~/.zshrc &&
+echo "neofetch" >> ~/.zshrc &&
+echo alias cat='"bat"' >> ~/.zshrc &&
+echo alias mp3-dl='"youtube-dl --extract-audio --audio-format mp3"' >> ~/.zshrc &&
+echo alias video-dl='"youtube-dl -f 24"' >> ~/.zshrc &&
+echo alias exit='"history -c && exit"' >> ~/.zshrc
+# Setting up power level 10k
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+sed -i "s%robbyrussell%powerlevel10k/powerlevel10k%g" ~/.zshrc &&
 
 # Set fonts
 mkdir -p ~/.local/share/fonts/
