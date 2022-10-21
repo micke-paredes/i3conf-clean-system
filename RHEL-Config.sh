@@ -57,4 +57,7 @@ git clone https://github.com/olemartinorg/i3-alternating-layout
 sudo mv i3-alternating-layout/alternating_layouts.py /bin 
 # i3 gaps
 sudo yum install i3-gaps-4.19.1-3.fc36 --allowerasing
+mkdir -p ~/.config/i3/
+mv config ~/.config/i3/
+mv Wallpaper.jpg ~/Pictures
 rm -rf *
