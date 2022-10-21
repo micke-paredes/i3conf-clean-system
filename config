@@ -196,15 +196,15 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        position bottom
-        font pango: Terminess Nerd Font 10, pango:FontAwesome 10
+        position top
+        font pango: Terminess Nerd Font 8, pango:FontAwesome 8
         status_command  ~/.local/bin/bumblebee-status \
                 -m disk:root memory battery uptime ping traffic sensors cmus cpu pasource pasink date time \
                 -p root.path=/ cpu2.maxfreq cpu2.cpuload cpu2.coresload cpu2.temp cpu2.fanspeed spacer.text \
                         ensors2.chip ensors2.chip sensors2.showtemp sensors2.showfan sensors2.showother sensors2.showname traffic.showname \
                         traffic.states traffic.format traffic.graphlen cmus.format: {file} \
 			cmus.layout: cmus.prev cmus.next cmus.shuffle cmus.repeat \
-                -t solarized        
+                -t gruvbox-powerline        
 colors {
                 background #222222
                 statusline #FFFFFF
@@ -222,7 +222,7 @@ client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #FFFFFF
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 4
 
 exec --no-startup-id nitrogen --restore
 exec_always picom -f
