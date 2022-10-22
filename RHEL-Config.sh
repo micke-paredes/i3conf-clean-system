@@ -11,7 +11,7 @@ pip3 install awscli psutil i3ipc
 pip install --user bumblebee-status
 
 # Setting up Wallpaper
-mv Walpaper.jpg ~/Pictures
+mv Wallpaper.jpg ~/Pictures/ 
 
 # i3 config file
 mv config ~/.config/i3/
