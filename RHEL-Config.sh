@@ -51,6 +51,7 @@ echo alias cat='"bat"' >> ~/.zshrc &&
 echo alias mp3-dl='"youtube-dl --extract-audio --audio-format mp3"' >> ~/.zshrc &&
 echo alias video-dl='"youtube-dl -f 24"' >> ~/.zshrc &&
 echo alias exit='"history -c && exit"' >> ~/.zshrc
+echo alias clear='"clear && neofetch"' >> ~/.zshrc
 
 
 # Set fonts
