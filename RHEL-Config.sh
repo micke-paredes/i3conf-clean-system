@@ -59,13 +59,14 @@ echo alias clear='"clear && neofetch"' >> ~/.zshrc
 
 
 # Set fonts
-cd ~/.local/share/fonts/
+cd $workDir
 wget  https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Terminus.zip &&
-unzip Terminus.zip &&
+mv Terminus.zip ~/.local/share/fonts/
+unzip ~/.local/share/fonts/Terminus.zip &&
 rm -rf *.zip
 sudo fc-cache -v
 
-cd ~/Documents
+cd $workDir
 # i3 Lock
 git clone https://github.com/meskarune/i3lock-fancy.git
 cd i3lock-fancy/
@@ -86,6 +87,6 @@ sudo systemctl enable httpd.service
 sudo systemctl start ssh.service
 sudo systemctl enable ssh.service
 
-rm -rf $workDir
+# rm -rf $workDir
 
 exit
