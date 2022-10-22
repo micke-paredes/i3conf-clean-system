@@ -62,7 +62,8 @@ echo alias clear='"clear && neofetch"' >> ~/.zshrc
 cd $workDir
 wget  https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Terminus.zip &&
 mv Terminus.zip ~/.local/share/fonts/
-unzip ~/.local/share/fonts/Terminus.zip ~/.local/share/fonts/ &&
+unzip ~/.local/share/fonts/Terminus.zip &&
+mv *.ttf  ~/.local/share/fonts/
 rm -rf *.zip
 sudo fc-cache -v
 
@@ -86,6 +87,6 @@ sudo systemctl enable httpd.service
 sudo systemctl start sshd.service
 sudo systemctl enable sshd.service
 
-# rm -rf $workDir
+rm -rf $workDir
 
 exit
