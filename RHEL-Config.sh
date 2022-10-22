@@ -1,3 +1,6 @@
+# Get current location
+workDir=`pwd`
+
 # Initial installation 
 sudo yum upgrade -y
 sudo yum install -y filezilla meld youtube-dl ffmpeg rofi ranger git bat vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh-3.8-2.fc36 nitrogen httpd openssh samba firewalld python3-netifaces -y
@@ -69,12 +72,20 @@ cd i3lock-fancy/
 sudo make install
 # i3 alternate Layouts
 git clone https://github.com/olemartinorg/i3-alternating-layout.git
-sudo mv i3-alternating-layout/i3-alternating-layout/alternating_layouts.py /bin 
+sudo mv i3-alternating-layout/alternating_layouts.py /bin 
 rm -rf *
 
 # Set Rofi
 git clone https://github.com/lr-tech/rofi-themes-collection.git &&
 mv rofi-themes-collection/themes/* ~/.local/share/rofi/themes/ &&
-rm -rf * 
+
+# Enable and start services
+sudo systemctl start httpd.service
+sudo systemctl enable httpd.service
+
+sudo systemctl start ssh.service
+sudo systemctl enable ssh.service
+
+rm -rf $workDir
 
 exit
