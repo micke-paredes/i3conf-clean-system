@@ -64,12 +64,12 @@ sudo fc-cache -v
 
 cd ~/Documents
 # i3 Lock
-git clone https://github.com/meskarune/i3lock-fancy/tree/dualmonitors
-cd dualmonitors/
+git clone https://github.com/meskarune/i3lock-fancy.git
+cd i3lock-fancy/
 sudo make install
 # i3 alternate Layouts
-git clone https://github.com/meskarune/i3lock-fancy.git
-sudo mv i3lock-fancy-dualmonitor/i3-alternating-layout/alternating_layouts.py /bin 
+git clone https://github.com/olemartinorg/i3-alternating-layout.git
+sudo mv i3-alternating-layout/i3-alternating-layout/alternating_layouts.py /bin 
 rm -rf *
 
 # Set Rofi
