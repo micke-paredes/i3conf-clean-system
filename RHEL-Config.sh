@@ -60,7 +60,7 @@ sudo fc-cache -v
 cd ~/Documents
 # i3 Lock
 git clone https://github.com/meskarune/i3lock-fancy/tree/dualmonitors
-cd i3lock-fancy/
+cd dualmonitors/
 sudo make install
 # i3 alternate Layouts
 git clone https://github.com/olemartinorg/i3-alternating-layout
