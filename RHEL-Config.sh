@@ -24,7 +24,7 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 mkdir -p ~/.config/rofi/
 mkdir -p ~/.config/i3/
 mkdir -p ~/.local/share/fonts/
-mkdir -p ~/.local/share/rofi/themes
+mkdir -p ~/.local/share/rofi/themes/
 
 # Install ZSH plugins (autosuggestions autocomplete syntax-highlighting fzf)
 cd ~/.oh-my-zsh/plugins
