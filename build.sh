@@ -81,6 +81,11 @@ rm -rf *
 git clone https://github.com/lr-tech/rofi-themes-collection.git &&
 mv rofi-themes-collection/themes/* ~/.local/share/rofi/themes/ &&
 
+# Oh my tmux
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
+
 # Enable and start services
 sudo systemctl start httpd.service
 sudo systemctl enable httpd.service
