@@ -1,9 +1,9 @@
-mkdir -p /srv/samba
-chmod -R 755 /srv/samba
-chown -R  nobody:nobody /srv/samba
-chcon -t samba_share_t /srv/samba
-mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
-cat > /etc/samba/smb.conf << "EOL"
+sudo mkdir -p /srv/samba
+sudo chmod -R 755 /srv/samba
+sudo chown -R  nobody:nobody /srv/samba
+sudo chcon -t samba_share_t /srv/samba
+sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
+sudo cat > /etc/samba/smb.conf << "EOL"
 [global]
 workgroup = WORKGROUP
 server string = Samba Server %v
@@ -20,17 +20,17 @@ guest ok = yes
 read only = no
 EOL
 
-testparm
+sudo testparm
 
-systemctl start smb
-systemctl enable smb
-systemctl start nmb
-systemctl enable nmb
+sudo systemctl start smb
+sudo systemctl enable smb
+sudo systemctl start nmb
+sudo systemctl enable nmb
 
-systemctl status smb
-systemctl status nmb
+sudo systemctl status smb
+sudo systemctl status nmb
 
-firewall-cmd --info-service samba
-firewall-cmd --permanent --add-service=samba
+sudo firewall-cmd --info-service samba
+sudo firewall-cmd --permanent --add-service=samba
 
 firewall-cmd --reload
