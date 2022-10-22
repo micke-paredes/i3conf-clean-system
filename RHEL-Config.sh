@@ -19,6 +19,7 @@ mv config ~/.config/i3/
 # Setting up samba
 chmod +x samba.sh
 ./samba.sh
+rm samba.sh
 
 # Install Oh my zsh 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
