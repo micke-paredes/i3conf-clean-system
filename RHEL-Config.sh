@@ -13,6 +13,9 @@ pip install --user bumblebee-status
 # Setting up Wallpaper
 mv Walpaper.jpg ~/Pictures
 
+# i3 config file
+mv config ~/.config/i3/
+
 # Setting up samba
 chmod +x samba.sh
 ./samba.sh
@@ -65,13 +68,11 @@ sudo make install
 # i3 alternate Layouts
 git clone https://github.com/olemartinorg/i3-alternating-layout
 sudo mv i3-alternating-layout/alternating_layouts.py /bin 
-mv config ~/.config/i3/
-mv Wallpaper.jpg ~/Pictures
 rm -rf *
 
 # Set Rofi
-git clone https://github.com/lr-tech/rofi-themes-collection.git
-mv rofi-themes-collection/themes/* ~/.local/share/rofi/themes/
-rm -rf ~/.local/share/rofi/themes/
+git clone https://github.com/lr-tech/rofi-themes-collection.git &&
+mv rofi-themes-collection/themes/* ~/.local/share/rofi/themes/ &&
+rm -rf * 
 
 exit
