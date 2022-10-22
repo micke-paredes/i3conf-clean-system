@@ -69,7 +69,7 @@ cd dualmonitors/
 sudo make install
 # i3 alternate Layouts
 git clone https://github.com/meskarune/i3lock-fancy.git
-sudo mv i3lock-fancy/i3-alternating-layout/alternating_layouts.py /bin 
+sudo mv i3lock-fancy-dualmonitor/i3-alternating-layout/alternating_layouts.py /bin 
 rm -rf *
 
 # Set Rofi
