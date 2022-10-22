@@ -45,18 +45,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 # Setting up power level 10k
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-sed -i "s%robbyrussell%powerlevel10k/powerlevel10k%g" ~/.zshrc &&
-
-# Setting up zsh settings
-plugins="git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting sudo" &&
-sed -i "s%plugins=(git)%plugins=($plugins)%g" ~/.zshrc &&
-echo "neofetch" >> ~/.zshrc &&
-echo alias cat='"bat"' >> ~/.zshrc &&
-echo alias mp3-dl='"youtube-dl --extract-audio --audio-format mp3"' >> ~/.zshrc &&
-echo alias video-dl='"youtube-dl -f 24"' >> ~/.zshrc &&
-echo alias exit='"history -c && exit"' >> ~/.zshrc
-echo alias clear='"clear && neofetch"' >> ~/.zshrc
-
 
 # Set fonts
 cd $workDir
@@ -91,6 +79,10 @@ sudo systemctl start httpd.service
 sudo systemctl enable httpd.service
 sudo systemctl start sshd.service
 sudo systemctl enable sshd.service
+
+# Replace zshrc template
+rm rf ~/.zshrc
+mv zshrc-template ~/.zshrc
 
 rm -rf $workDir
 
