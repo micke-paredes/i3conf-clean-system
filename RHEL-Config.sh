@@ -1,9 +1,10 @@
 # Initial installation 
 sudo yum upgrade -y
 sudo yum install -y filezilla meld youtube-dl ffmpeg rofi ranger git bat vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh-3.8-2.fc36 nitrogen httpd openssh samba firewalld python3-netifaces -y
-sudo yum install -y cmus util-linux-user i3 xedit.x86_64 i3-gaps-4.19.1-3.fc36 --allowerasing
-sudo dnf install 0y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install powerline-fonts fontawesome-fonts fira-code-fonts
+sudo yum install -y cmus util-linux-user i3 xedit.x86_64 
+sudo yum install -y i3-gaps-4.19.1-3.fc36 --allowerasing --skip-broken
+sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y powerline-fonts fontawesome-fonts fira-code-fonts
 
 # pip libraries
 pip3 install awscli psutil i3ipc
