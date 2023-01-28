@@ -7,7 +7,7 @@ sudo yum install -y filezilla meld youtube-dl ffmpeg rofi ranger git bat vim zsh
 sudo yum install -y cmus util-linux-user i3 xedit.x86_64 
 sudo yum install -y i3-gaps-4.19.1-3.fc36 --allowerasing --skip-broken
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install -y powerline-fonts fontawesome-fonts fira-code-fonts
+sudo dnf install -y powerline-fonts fontawesome-fonts fira-code-fonts playerctl
 
 # pip libraries
 pip3 install awscli psutil i3ipc
