@@ -3,7 +3,7 @@ workDir=`pwd`
 
 # Initial installation 
 sudo yum upgrade -y
-sudo yum install -y filezilla meld youtube-dl ffmpeg rofi ranger git bat rofi vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh nitrogen httpd openssh samba firewalld python3-netifaces -y
+sudo yum install -y filezilla meld youtube-dl ffmpeg rofi ranger git bat lsd vim zsh python3 python3-pip neofetch ansible unzip nmap xclip maim finch lxappearance-devel picom feh nitrogen httpd openssh samba firewalld python3-netifaces -y
 sudo yum install -y cmus util-linux-user i3 xedit.x86_64 
 sudo yum install -y i3-gaps-4.19.1-3.fc36 --allowerasing --skip-broken
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -84,6 +84,14 @@ sudo systemctl enable sshd.service
 rm rf ~/.zshrc
 mv zshrc-template ~/.zshrc
 
+# Install code 
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+dnf check-update
+sudo dnf install code
+
 rm -rf $workDir
+
+
 
 exit
